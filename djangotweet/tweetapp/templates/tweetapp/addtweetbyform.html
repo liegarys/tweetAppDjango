@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+<h1>Add Tweet By Form</h1>
+
+<form action= "" method = "POST">
+    {% csrf_token %}
+    {{form}}
+    <button type="submit" class="btn btn-primary">Sent Tweet</button>
+  </form>
+{% endblock content %}
